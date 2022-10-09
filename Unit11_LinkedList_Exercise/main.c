@@ -15,7 +15,7 @@ struct List
     int data;
     struct List *next; // Struct List *next to be able to store its next node address
 };
-typedef struct List *node; //Definition for struct List address *node
+typedef struct List *node; // Definition for struct List address *node
 
 node head;
 
@@ -104,13 +104,14 @@ int front()
         /* code */
         return p->data;
     }
-    
 }
 // Getting nth postion element in Linked List
-int at(int index){
+int at(int index)
+{
     int k = 0;
     node p = head;
-    while(p->next != NULL && k != index){
+    while (p->next != NULL && k != index)
+    {
         ++k;
         p = p->next;
     }

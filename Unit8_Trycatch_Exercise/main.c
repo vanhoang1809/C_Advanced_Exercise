@@ -57,7 +57,7 @@ int main()
 {
     TRY
     {
-        char arr_1[] = {1, 2, 6, 4, 5, 6};
+        char arr_1[] = {1, 3, 3, 4, 5, 6};
         char arr_2[] = {1, 3, 6, 4, 5, 8};
         unsigned char size_arr_1 = sizeof(arr_1) / sizeof(char);
         unsigned char size_arr_2 = sizeof(arr_2) / sizeof(char);
