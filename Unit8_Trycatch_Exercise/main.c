@@ -57,10 +57,18 @@ int main()
 {
     TRY
     {
+        // If you want input character
+        // char arr_1[] = "hello word";
+        // char arr_2[] = "hello world";
+
         char arr_1[] = {1, 3, 3, 4, 5, 6};
         char arr_2[] = {1, 3, 6, 4, 5, 8};
-        unsigned char size_arr_1 = sizeof(arr_1) / sizeof(char);
-        unsigned char size_arr_2 = sizeof(arr_2) / sizeof(char);
+
+        // Using pointer count length of array
+        unsigned char size_arr_1 = *(&arr_1 + 1) - arr_1;
+        unsigned char size_arr_2 = *(&arr_2 + 1) - arr_2;
+
+        printf("size array 1: %d. size array 2: %d\n", size_arr_1, size_arr_2);
         unsigned char result = equalArray(arr_1, arr_2, size_arr_1, size_arr_2);
         if (result == 1)
         {
